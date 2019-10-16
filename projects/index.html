@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+	modified from https://github.com/tkipf/tkipf.github.io
+-->
+<html>
+	<head>
+		<title>Chieh Lin | PhD Candidate of Machine Learning @ Carnegie Mellon University</title>
+		<noscript>
+			<link rel="stylesheet" href="/css/style.css" />
+			<link rel="stylesheet" href="/css/skel.css" />
+			<link rel="stylesheet" href="/css/style-xlarge.css" />
+		</noscript>
+		<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css?family=Raleway:400,700">
+		<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css?family=Open+Sans">
+		<link rel="stylesheet" href="/css/font-awesome.min.css">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
+		<!--[if lte IE 8]><script src="../js/html5shiv.js"></script><![endif]-->
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/skel.min.js"></script>
+		<script src="/js/skel-layers.min.js"></script>
+		<script src="/js/init.js"></script> <!-- NOTE: Pulls CSS files from static server -->
+	</head>
+<body class="landing">
+
+		<!-- Header -->
+			<header id="header">
+				<ul class="icons">
+					<li>
+						<a href="https://scholar.google.com/citations?user=Ddz61kgAAAAJ&hl=zh-TW" class="icon fa-graduation-cap"></a>
+					</li>
+					<li>
+						<a href="https://github.com/jessica1338" class="icon fa-github"></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/chieh-lin-925a327b/" class="icon fa-linkedin"></a>
+					</li>
+				</ul>
+				<nav id="nav">
+					<ul>
+						<li><a href="/" class="active">Home</a></li>
+						<li><a href="/#two">Research</a></li>
+						<li><a href="/projects/">Projects</a></li>
+						<li><a href="/#footer">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Two -->
+	<section id="two" class="wrapper style2">
+		<div class="container 75%">
+			<h2 style="text-align: center">Selected Projects</h2>
+			
+			
+			<hr />
+			<div class="row 200%">
+				<div class="4u 6u(large) 12u$(medium)">
+						<div class="image"><img src="/images/3D_Shape_Net.png" width="100%" alt="" style="border:none;" /></div>
+				</div>
+				<div class="8u$ 6u$(large) 12u$(medium)">
+					<header>
+						<h4>Deep Adversarial 3D Shape Net </h4>
+						<p> </p>
+					</header>
+					<p><span style="text-decoration: underline;">Chieh Lin</span>, <a href='https://www.dgp.toronto.edu/~hsuehtil/'>Hsueh-Ti (Derek) Liu</a>, <a href='https://www.linkedin.com/in/alex-kelly-1b583695/'>Alex Kelly</a>.  <span style="font-weight: bold">Deep Adversarial 3D Shape Net</span> [<a href='/paper_pdf/3D_shape_net.pdf'>report</a>]</p>
+						<p> This is the final project for course 10807-Topics in Deep Learning taken in 2016 Fall. In this project we have reviewed various deep learning models applied to 3D shape data. It has been shown that voxel representation is suitable for training deep learning models. The learned shape representation is able to perform classification and reconstruction given 2D or 2.5D images. However, how to ensure generated shapes are valid is still an unsolved problem in this field. We implemented 3D-CNN for classification, 3D-VAE and 3D-GAN for shape generation, and 3DDBM for reconstructing 3D shapes from 2.5D data. Our ultimate goal is to combine these approaches to build a 3D-AAE and modify the loss function to add reqularized term in order to generate more smooth and plausible shapes. Unfortunately, we could not obtain satisfactory results by the deadline. We failed to capture surface detail of the shapes, but we still achieve promising results in all three tasks we mentioned above.  </p>
+				</div>
+			</div>
+			<hr />
+			<div class="row 200%">
+				<div class="4u 6u(large) 12u$(medium)">
+						<div class="image"><img src="/images/ConvexOpt.png" width="100%" alt="" style="border:none;" /></div>
+				</div>
+				<div class="8u$ 6u$(large) 12u$(medium)">
+					<header>
+						<h4>The Implicit Dual Newton Method </h4>
+						<p> </p>
+					</header>
+					<p><a href='https://powei.tw/'> Po-Wei Wang</a>, <span style="text-decoration: underline;">Chieh Lin</span>, <a href='https://www.linkedin.com/in/tzumingkuo/'>Tzu-Ming Kuo</a>.  <span style="font-weight: bold">The Implicit Dual Newton Method</span> [<a href='/paper_pdf/Convex_Opt_Final_Report.pdf'>report</a>]</p>
+						<p>This is the final project for course 10725-Convex Optimization taken in 2016 Fall. To solve convex optimization problem, we can apply the primal-dual interior point method, which approximates the original objective f(x) and contraints gi(x) by second-order Taylor expansions, examines the KKT condition of the approximation, and then solves the KKT system by Newton method. On the other hand, we know that a dual problem corresponding to the prime problem exist. Assuming zero duality gap, can we simply solve the primal-dual pair without approximation? Unfortunately, unlike quadratic program or semi-definite program, there are no analytic dual problems for most convex primal problems. This makes the optimization involving the dual problem harder. However, we can show that, by implicit function theorem, there is a link between the primal and dual derivatives (Dontchev and Rockafellar, 2009). We can actually derive the gradient and Hessian for the dual problem from the proximal functions of f and gi, solving the dual optimization implicitly (Wang et al., 2016). For epigraph projection application, we can see that the implicit Newton method did converges faster than the other method. </p>
+				</div>
+			</div>
+			<hr />
+			<div class="row 200%">
+				<div class="4u 6u(large) 12u$(medium)">
+						<div class="image"><img src="/images/SML.png" width="100%" alt="" style="border:none;" /></div>
+				</div>
+				<div class="8u$ 6u$(large) 12u$(medium)">
+					<header>
+						<h4>A Theoretical Summary of Cross-Validation Frameworks with Closed-From Expressions </h4>
+						<p> </p>
+					</header>
+					<p><span style="text-decoration: underline;">Chieh Lin</span> <span style="font-weight: bold">, A Theoretical Summary of Cross-Validation Frameworks with Closed-From Expressions </span>  [<a href='/paper_pdf/36702_SML_Project_Final_Report.pdf'>report</a>, <a href='/paper_pdf/SML_presentation_slides_chiehl1.pdf'>slides</a>]</p>
+						<p>This is the final project for course 36702-Statistical Machine Learning taken in Spring 2016. For machine learning and statistical models, cross-validation (CV) method is widely used for model selection and performance estimation. The philosophy of CV is to split the limited amount of data into training set and validation set. The validation set can be the "new data" for estimating the performance of the model. Since CV only assumes that the data are identically distributed and the training set are independent from validation set, CV is universal and can be applied to almost all of frameworks such as regression, density estimation, and classification. The most popular CV schemes are leave-one-out (LOO) cross-validation, and K-fold cross-validation. However, even the most naive implementation of cross-validation with K data splits has a complexity of K times the model training time. This might be impossible to do depending on how expensive the model training is. This project aims to survey the frameworks that have closed-form cross-validation expressions and figure out the theoretical basis of each closed-form expression. To be more specific, we will focus on (LOO) and leave-p-out (LPO) cross-validation schemes where p can be any number between 1 and n-1 where n is the size of training set. With this information, the risks of the models built in these frameworks can be easily estimated by the studied closed-form expressions. From literature survey, it is known that closed-form formulas of LOO and LPO risk estimator have been derived for projection estimator, histogram estimator(which is a special case of projection estimator), and kernel estimators for density estimation. For least squares in linear regression, closed-form formulas for LPO estimators are also derived in regression for regressogram, kernel and projection estimators. For regressogram and kernel estimator in regression, additional assumption on data and the kernel functions need to be satisfied, which makes these two closed-forms not universal, so the detail of these two LPOs is not covered in this project. We have investigated and verified that closed-form LPO and LOO are available in density estimation and regression frameworks with some well-known estimators. This project provides a summary of the exact closed-form expressions under specific estimators and frameworks.</p>
+				</div>
+			</div>
+			<hr />
+			<div class="row 200%">
+				<div class="4u 6u(large) 12u$(medium)">
+						<div class="image"><img src="/images/CG.png" width="100%" alt="" style="border:none;" /></div>
+				</div>
+				<div class="8u$ 6u$(large) 12u$(medium)">
+					<header>
+						<h4>Classification and Clustering of Single Cell RNA-seq Gene Expression Data Using Deep Learning Features </h4>
+						<p> </p>
+					</header>
+					<p><span style="text-decoration: underline;">Chieh Lin</span>, <span style="font-weight: bold">Classification and Clustering of Single Cell RNA-seq Gene Expression Data Using Deep Learning Features </span>  [<a href='/paper_pdf/02710_CG_Project_Final_Report.pdf'>report</a>, <a href='/paper_pdf/CG_poster_chiehl1.pdf'>poster</a>]</p>
+						<p>This is the final project for course 02710-Computational Genomics taken in Spring 2016. To understand the regulations of cell functions in complex biological systems, it is very important to identify various cell types in the systems. Take nervous systems as example, the cell type diversity is still poorly understood so that the most of the brain functions remain a mystery. Also, even the cells with the same cell type might play different roles in different phases. Therefore, classification of different phases of cells is also important. For now, several of the cell type classification works are based on principal component analysis (PCA) with manual curations. This project aims to apply deep learning methods to extract non-linear features from the single cell RNA-seq data and use the feature in other classification or clustering methods. The ultimate goal of this project is using deep learning to generate deep features (embeddings) to help classify/cluster unknown cell types in order to discover new cell types. From the results, it can be observed that PCA is slightly better than NN in classification but NN is much better than PCA in clustering. Since our ultimate goal is discovering new cell types, the result of clustering is more important than classification. We assume that NN can somehow learn non-linear biological information from the input and help clustering performance. Also, the expected result of landmark genes is no better than the set of all genes, and the result corresponds to our assumption. This result shows that if we use only landmark genes to speed up the model training time, we could lose important biological information that can help distinguish new cell types.</p>
+				</div>
+			</div>
+			<hr />
+			<div class="row 200%">
+				<div class="4u 6u(large) 12u$(medium)">
+						<div class="image"><img src="/images/DrugSynergy.png" width="100%" alt="" style="border:none;" /></div>
+				</div>
+				<div class="8u$ 6u$(large) 12u$(medium)">
+					<header>
+						<h4>Drug Combination Prediction Challenge </h4>
+						<p> </p>
+					</header>
+					<p><span style="text-decoration: underline;">Chieh Lin</span>, <a href='https://powei.tw/'> Po-Wei Wang</a>, <a href='https://www.linkedin.com/in/yan-xia-28496871/'>Yan Xia (Not in the class)</a>, <a href='http://www.cs.cmu.edu/~zivbj/'> Ziv Bar-Joseph (Supervisor)</a>,  <span style="font-weight: bold">Drug Combination Prediction Challenge </span>  [<a href='/paper_pdf/10715_report20151213.pdf'>report</a>, <a href='/paper_pdf/10715_slides20151213.pdf'>slides</a>]</p>
+						<p>This is the final project for course 10715-Advanced Introduction to Machine Learning taken in Fall 2015. The multi-drug combination effects is always an important issue because it can help develop new therapies for diseases and prevent deadly drug-combination side-effects. However, it takes substantial efforts and resources for in vivo methods to verify the effects since the number of combinations is too large. Therefore, the in vitro method of machine learning for predicting the multi-drug combination effect is necessary. The AstraZeneca-Sanger Drug Combination Prediction Challenge [1] provides datasets for modelling two-drug synergy effect. With the datasets, the goal of this project is to find the best machine learning strategy to solve the two-drug synergy prediction problem, hoping to lay the foundation of future multi-drug combination effect prediction. For now, we have tried three strategies to deal with drug synergy problem: curve fitting, naive regression, and our newly developed locality model. We found that assuming the dataset is a sigmoidal curve and doing curve fitting results in the lowest performance. This tells us that although the sigmoidal curve may best characterize the behavior of dosage-response curve theoretically, the noises accumulated in each steps of experiment might still have a great impact to the performance. Logistic regression gives better results, but still no better than locality model. The locality model is the new way to predict live rate matrix from mono therapy without fitting any parametric curve. We developed new algorithm of proximal coordinate descent to solve the optimization problem of locality model with complexity linear to the number of features. Also, the L1 regulation term in regression plus poly2 expansion leads to good result with controllable non-zero terms, which shows that this technique can help keep the model from overfiting with stable performance in cross validation. This study is a systematic way to model drug synergy effect without using too much domain knowledge.</p>
+				</div>
+			</div>
+			<hr />
+			
+			<div class="row 200%">
+				<div class="4u 6u(large) 12u$(medium)">
+						<div class="image"><img src="/images/CADD2.png" width="100%" alt="" style="border:none;" /></div>
+				</div>
+				<div class="8u$ 6u$(large) 12u$(medium)">
+					<header>
+						<h4>Computer-Aided Drug Design Project</h4>
+						<p> </p>
+					</header>
+					
+					<p> This is the Final Project for the course Computer-Aided Drug Design taken in 2013. This project required us to choose a paper to implement. We implemented this paper "Physically Motivated, Robust, ab Initio Force Fields for CO2 and N2" with my team member <a href='https://www.cs.utexas.edu/~ycsu/'>Yu-Chuan Su</a>. Specifically, we perform molecular dynamic (MD) simulations with small molecules of CO2 and N2 with various force fields.</p>
+					
+				</div>
+			</div>
+			<hr />
+			<div class="row 200%">
+				<div class="4u 6u(large) 12u$(medium)">
+						<!--<div class="image"><img src="images/BU_CSHMM.png" width="100%" alt="" style="border:none;" /></div>-->
+						<iframe width="100%"  src="https://www.youtube.com/embed/ECqNb1n_7iQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="8u$ 6u$(large) 12u$(medium)">
+					<header>
+						<h4>Chinese Dark Chess A.I. </h4>
+						<p></p>
+					</header>
+					
+						<p> This is the Final Project for the course Theory of Computer Games taken in 2011. I use negascout algorithm, transposition table, move ordering, scoring function, and assigning different pieces with different value to achieve this A.I. The red player is A.I., and black player is me. The video shows part of my game with my A.I.</p>
+				</div>
+				
+			</div>
+			<hr />
+			<div class="row 200%">
+				<div class="4u 6u(large) 12u$(medium)">
+						<div class="image"><img src="/images/M68K2.png" width="100%" alt="" style="border:none;" /></div>
+				</div>
+				<div class="8u$ 6u$(large) 12u$(medium)">
+					<header>
+						<h4>M68000 CPU instruction set implementation</h4>
+						<p> </p>
+					</header>
+						<p>This is the Final Project for the course Digital Circuit Design taken in 2011. In this project, we are asked to implement about 50 instructions from M68000 CPU. We choose about 50 instructions and 6 addressing mode of to implement (This is a total about 300 instructions). We design the block diagram for these instructions and write a simulator, assmbler with gui demonstrating the data flow for each instruction.</p>
+				</div>
+				
+			</div>
+			<hr />
+			<div class="row 200%">
+				<div class="4u 6u(large) 12u$(medium)">
+						<iframe width="100%"  src="https://www.youtube.com/embed/BnfL2cJ_EBY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="8u$ 6u$(large) 12u$(medium)">
+					<header>
+						<h4>Intelligent Car</h4>
+						<p> </p>
+					</header>
+					
+						<p> This is the Final Project for the course Digital Circuit Laboratory taken in 2011. We use DE2 FPGA board as the core of our car and output signals to GWS-S35 servo mortors to drive the car. The car will do corresponding actions when it sees specific colors. Blue: moving forward, Yellow: moving backward, Green: turning left/right  </p>
+				</div>
+				
+			</div>
+			<hr />
+			<div class="row 200%">
+				<div class="4u 6u(large) 12u$(medium)">
+						<div class="image"><img src="/images/KeyBoardAgent.png" width="100%" alt="" style="border:none;" /></div>
+				</div>
+				<div class="8u$ 6u$(large) 12u$(medium)">
+					<header>
+						<h4>Keyboard Agent</h4>
+						<p></p>
+					</header>
+					
+						<p> This is a Project when I was work as a programmer in Nexcom, 2010. This program let users define their key mapping preference. The pre-defined keys can be mapped to a sequence of keys, launching applications and running commands.</p>
+				</div>
+				
+			</div>
+			<hr />
+			<div class="row 200%">
+				<div class="4u 6u(large) 12u$(medium)">
+						<iframe width="100%"  src="https://www.youtube.com/embed/jSqFsacayKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="8u$ 6u$(large) 12u$(medium)">
+					<header>
+						<h4>Game Projects</h4>
+						<p> </p>
+					</header>
+					
+					<p> We use Java and C to implement games in Object-Oriented Programming course and Assembly course taken in 2010 as my final project.  The video is a single-player version Puyo Puyo game. </p>
+					
+				</div>
+			</div>
+			
+			
+			
+		</div>
+	</section>
+
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<h2>Get in touch</h2>
+				<p><span style="font-weight: bold">chiehl1[AT]cs[DOT]cmu[DOT]edu</span><br /> Machine Learning Department, Carnegie Mellon University<br />5000 Forbes Avenue, Gates Hillman Center, 8th Floor, Pittsburgh, PA 15213</p>
+				<p></p>
+				<ul class="icons">
+					<li>
+						<a href="https://scholar.google.com/citations?user=Ddz61kgAAAAJ&hl=zh-TW" class="icon fa-graduation-cap"></a>
+					</li>
+					<li>
+						<a href="https://github.com/jessica1338" class="icon fa-github"></a>
+					</li>
+
+					<li>
+						<a href="https://www.linkedin.com/in/chieh-lin-925a327b/" class="icon fa-linkedin"></a>
+					</li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; 2019 Chieh Lin</li>
+					<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+				</ul>
+			</div>
+		</footer>
+
+	</body>
+</html>
